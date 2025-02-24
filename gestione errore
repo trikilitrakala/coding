@@ -1,0 +1,6 @@
+try:
+    numero = int (input ("inserisci un numero: "))
+    print (f"hai inserito: {numero} ")
+except ValueError:
+    print ("Errore: devi inserire un numero!")
+

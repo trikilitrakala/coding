@@ -1,0 +1,30 @@
+saldo = 500
+while True:
+    print("Benvenuto nella tua banca")
+    print("1 controlla il saldo")
+    print("2 deposita denaro")
+    print("3 preleva denaro")
+    print("4 esci")
+
+    scelta = input("scegli un'opzione (1-4): ")
+
+    if scelta == "1":
+        print(f"il tuo saldo attuale è {saldo}")
+    elif scelta == "2":
+        deposito = float(input("quanto vuoi depositare?"))
+        if deposito > 0:
+            saldo +=deposito
+            print (f"deposito effettuato. nuovo saldo: {saldo} $")
+        else: 
+            print ("inserisci un importo valido")
+    elif scelta == "3":
+        prelievo = float(input("quanto vuoi prelevare?"))
+        if prelievo > saldo:
+            print ("non ce li hai quei soldi")
+        else:
+            saldo -= prelievo
+            print (f"ti rimangono {saldo} euro")
+    elif scelta == "4":
+        print ("grazie per aver usato banco di sardegna")
+    else:
+        print("mattagazzu")
