@@ -1,5 +1,6 @@
 #questo è il mio primo scriptß
-saldo = 500
+#questo è il secondo script
+saldo = 1000
 while True:
     print("Benvenuto nella tua banca")
     print("1 controlla il saldo")
