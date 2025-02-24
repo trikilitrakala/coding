@@ -1,3 +1,4 @@
+#questo è il mio primo scriptß
 saldo = 500
 while True:
     print("Benvenuto nella tua banca")
